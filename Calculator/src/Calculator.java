@@ -1,50 +1,40 @@
 import java.util.Scanner;
 
-
-//Calculator v2.0
 public class Calculator {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String operator = "";
+		double total = 0;
+		
 		try {
-
-			do {
-				System.out.println("Enter first number \n");
-				Double a = readNumber(scan);
-				if (a == null) {
-					continue;
-				}
-				System.out.println("Enter operator \n");
+				System.out.printf("Enter the 1st number: ");
+				Double firstOperand = readNumber(scan);
+			
+				System.out.printf("Enter operator: ");
 				operator = readOperator(scan);
-				if (operator == null) {
-					continue;
-				}
-				System.out.println("Enter second number \n");
-				Double b = readNumber(scan);
-				if (b == null) {
-					continue;
-				}
-				double c = 0;
+				
+				System.out.printf("Enter the 2nd number: ");
+				Double secondOperand = readNumber(scan);			
 
 				switch (operator) {
 				case "+":
-					c = a + b;
+					total = firstOperand + secondOperand;
 					break;
 				case "-":
-					c = a - b;
+					total = firstOperand - secondOperand;
 					break;
 				case "*":
-					c = a * b;
+					total = firstOperand * secondOperand;
 					break;
 				case "/":
-					c = a / b;
+					total = firstOperand / secondOperand;
 					break;
 				default:
-					System.out.println("Invalid operator!!!");
+					System.out.println("Invalid operator!");
 				}
-				System.out.println(c);
-			} while (!operator.equals("q"));
+				System.out.println("Your result is: " + total);
+	
 		} catch (Throwable e) {
 			System.out.println("Error: " + e.getMessage());
 
@@ -59,7 +49,7 @@ public class Calculator {
 		try {
 			result = scan.nextDouble();
 		} catch (Throwable e) {
-			System.out.println("Invalid number!");
+			System.out.println("Invalid operand!");
 			scan.reset();
 		}
 		return result;
@@ -71,6 +61,7 @@ public class Calculator {
 			result = scan.next();
 		} catch (Throwable e) {
 			System.out.println("Invalid operator!");
+			scan.reset();
 		}
 		return result;
 	}
