@@ -41,7 +41,6 @@ public class Calculator {
 		} finally {
 			scan.close();
 		}
-
 	}
 
 	private static Double readNumber(Scanner scan) {
