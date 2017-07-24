@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My suite" verbose="1">
+	<test name="First test">
+		<groups>
+			<run>
+				<include name="simpleMathOperations" />
+				<exclude name="checkValue" />
+			</run>
+		</groups>
+		<classes>
+			<class name="CalculatorTest.CalculatorTest_isPositive" />
+			<class name="CalculatorTest.CalculatorTest_Sum" />
+			<class name="CalculatorTest.CalculatorTest_isNegative" />
+		</classes>
+	</test>
+</suite> 

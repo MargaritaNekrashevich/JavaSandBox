@@ -6,12 +6,11 @@ import org.testng.Assert;
 
 public class CalculatorTest_isNegative {
 
- @Test
- public void testIsNegative() {
-	  Calculator calculator = new Calculator();
-	  boolean isNegative = calculator.isNegative(-5);
-	  Assert.assertTrue(isNegative);
- }
-  
-}
+	@Test(groups = "checkValue")
+	public void testIsNegative() {
+		Calculator calculator = new Calculator();
+		boolean isNegative = calculator.isNegative(-5);
+		Assert.assertTrue(isNegative);
+	}
 
+}
