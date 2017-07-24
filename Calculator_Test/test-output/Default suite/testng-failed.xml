@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="CalculatorTest.CalculatorTest_Sum">
+      <class name="CalculatorTest.CalculatorTest_isNegative">
         <methods>
-          <include name="Preconditions"/>
-          <include name="testSum" invocation-numbers="4"/>
-          <include name="Postconditions"/>
+          <include name="testIsNegative" invocation-numbers="0 4 2"/>
         </methods>
-      </class> <!-- CalculatorTest.CalculatorTest_Sum -->
+      </class> <!-- CalculatorTest.CalculatorTest_isNegative -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
