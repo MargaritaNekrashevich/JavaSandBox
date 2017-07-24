@@ -3,9 +3,9 @@
 <suite name="CalculatorTest" verbose="1">
 <test name="CalculatorTest">
 <classes>
-<class name="NewTest.testSum" />
-<class name="NewTest.testIsPositive" />
-<class name="NewTest.testIsNegative" />
+<class name="CalculatorTest_Sum.testSum" />
+<class name="CalculatorTest_isPositive.testIsPositive" />
+<class name="CalculatorTest_isNegative.testIsNegative" />
 </classes>
 </test>
 </suite>
