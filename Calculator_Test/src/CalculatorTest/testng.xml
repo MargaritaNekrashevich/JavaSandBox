@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CalculatorTest" verbose="1">
+<test name="CalculatorTest">
+<classes>
+<class name="NewTest.testSum" />
+<class name="NewTest.testIsPositive" />
+<class name="NewTest.testIsNegative" />
+</classes>
+</test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="28" started-at="2017-07-24T03:26:50Z" finished-at="2017-07-24T03:26:50Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="28" started-at="2017-07-24T03:26:50Z" finished-at="2017-07-24T03:26:50Z">
+      <class name="CalculatorTest.NewTest">
+        <test-method status="PASS" signature="testIsNegative()[pri:0, instance:CalculatorTest.NewTest@5afa04c]" name="testIsNegative" duration-ms="9" started-at="2017-07-23T20:26:50Z" finished-at="2017-07-23T20:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsNegative -->
+        <test-method status="PASS" signature="testIsPostive()[pri:0, instance:CalculatorTest.NewTest@5afa04c]" name="testIsPostive" duration-ms="1" started-at="2017-07-23T20:26:50Z" finished-at="2017-07-23T20:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsPostive -->
+        <test-method status="PASS" signature="testSum()[pri:0, instance:CalculatorTest.NewTest@5afa04c]" name="testSum" duration-ms="1" started-at="2017-07-23T20:26:50Z" finished-at="2017-07-23T20:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+      </class> <!-- CalculatorTest.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
