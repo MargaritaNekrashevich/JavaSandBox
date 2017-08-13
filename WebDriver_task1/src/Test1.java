@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import java.util.concurrent.TimeUnit;
+import org.testng.Assert;
+import org.testng.annotations.*;
+
 
 public class Test1 {
     public static void main(String[] args) {
@@ -18,11 +21,14 @@ public class Test1 {
         driver.findElement(By.cssSelector(".css-1j8lj3k")).sendKeys("sale");
         driver.findElement(By.cssSelector(".css-1j8lj3k")).sendKeys(Keys.ENTER);
         driver.findElement(By.xpath("//select[@data-at='search_sort_by']")).click();
+        //Verify keyword for search results
+        String keyword = driver.findElement(By.xpath(".//b[@class='u-fwb ng-binding']")).getText();
+        Assert.assertEquals(keyword, "“sale”");            
         //Sort by "new"
         new Select(driver.findElement(By.xpath("//select[@data-at='search_sort_by']"))).selectByVisibleText("new");
         driver.findElement(By.cssSelector(".css-1j8lj3k")).click();     
         //Click on SKU = 1966902
-        driver.findElement(By.xpath(".//a[@data-at='sku_item_1966902']")).click();
+        driver.findElement(By.xpath(".//div[@class='SkuItem-nameDisplay ng-binding' and @data-at='sku_item_name' and .='Notes of Joy, Love, & Grace Coffret']")).click();
         //Add item to basket
         driver.findElement(By.xpath(".//button[@data-at='pdp_add_to_basket']")).click();
         //Navigate to basket
